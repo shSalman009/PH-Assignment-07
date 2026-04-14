@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arif.hasan@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met during university in Sylhet. We used to study together before exams and still share memes occasionally. Loves football and late-night tea chats.",
+    "goal": 14,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "team"],
+    "bio": "Colleague from Robi service point. Very supportive and always helps during busy hours. We often discuss career growth and tech.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Rakib Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "rakib.ahmed@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["school", "gaming"],
+    "bio": "School friend and Free Fire teammate. We don’t meet often but still play together sometimes on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 4,
+    "name": "Sadia Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "sadia.rahman@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["family", "cousin"],
+    "bio": "My cousin who lives in Dhaka. We used to meet every Eid but recently got busy. She loves cooking and shares recipes.",
+    "goal": 20,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 5,
+    "name": "Imran Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "imran.c@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym partner. We motivate each other to stay consistent. Currently both trying to build a V-shape body.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 6,
+    "name": "Farhana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "farhana.akter@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["neighbor", "friend"],
+    "bio": "Lives nearby. We often go out for snacks and talk about daily life. Very easy-going and fun to hang out with.",
+    "goal": 10,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Tanvir Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/90.jpg",
+    "email": "tanvir.hossain@gmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["developer", "tech"],
+    "bio": "Met online while learning React. We used to share projects and ideas. Haven’t talked recently but should reconnect.",
+    "goal": 15,
+    "next_due_date": "2026-03-20"
+  },
+  {
+    "id": 8,
+    "name": "Mithila Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "email": "mithila.sultana@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["university", "study"],
+    "bio": "University batchmate. We used to prepare assignments together. Still keep in touch occasionally about career plans.",
+    "goal": 12,
+    "next_due_date": "2026-04-19"
+  }
+]
