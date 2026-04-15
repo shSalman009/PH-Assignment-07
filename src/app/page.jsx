@@ -1,3 +1,4 @@
+import Friends from "@/components/home/Friends";
 import Banner from "@/components/home/Banner";
 import React from "react";
 
@@ -8,7 +9,7 @@ export default function HomePage() {
 
       <div className="border-t border-gray-200 my-12"></div>
 
-      <h1>Home Page</h1>
+      <Friends />
     </div>
   );
 }
