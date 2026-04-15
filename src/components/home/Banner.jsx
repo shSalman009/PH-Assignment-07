@@ -24,7 +24,7 @@ export default function Banner() {
         </div>
         <div className="bg-base-100 shadow rounded-md sm:p-8 p-4">
           <h4 className="text-4xl font-bold text-emerald-900 mb-2">3</h4>
-          <p className="text-gray-500 md:text-xl text-base">TOn Track</p>
+          <p className="text-gray-500 md:text-xl text-base">On Track</p>
         </div>
         <div className="bg-base-100 shadow rounded-md sm:p-8 p-4">
           <h4 className="text-4xl font-bold text-emerald-900 mb-2">6</h4>

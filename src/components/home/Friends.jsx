@@ -11,7 +11,6 @@ const statusColor = {
 export default async function Friends() {
   const res = await fetch("http://localhost:3000/friends.json");
   const friends = await res.json();
-  console.log(friends);
 
   return (
     <div className="mb-16">
