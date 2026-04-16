@@ -1,7 +1,7 @@
 "use client";
 
 import { TimelineContext } from "@/context/TimelineContext";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import callIcon from "@/assets/call.png";
 import textIcon from "@/assets/text.png";
 import videoIcon from "@/assets/video.png";
@@ -14,8 +14,15 @@ const icons = {
   video: videoIcon,
 };
 
+const filterOptions = ["all", "call", "text", "video"];
+
 export default function TimelinePage() {
-  const { timelineData } = useContext(TimelineContext);
+  const { timelineData, filter, setFilter } = useContext(TimelineContext);
+
+  const handleFilterTimeline = (type) => {
+    setFilter(type);
+    document.activeElement.blur();
+  };
 
   return (
     <div className="container mx-auto px-4 lg:my-20 my-12">
@@ -26,21 +33,25 @@ export default function TimelinePage() {
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-lg text-base text-gray-500 w-60 justify-between"
+          className="btn btn-lg text-base text-gray-500 w-60 justify-between capitalize"
         >
-          Filter Timeline
+          {filter === "all" ? "Filter Timeline" : filter}
           <IoIosArrowDown />
         </div>
         <ul
           tabIndex="-1"
           className="dropdown-content menu bg-base-100 rounded-box z-1 w-60 p-2 shadow-sm"
         >
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 2</a>
-          </li>
+          {filterOptions.map((option) => (
+            <li key={option}>
+              <button
+                className="capitalize"
+                onClick={() => handleFilterTimeline(option)}
+              >
+                {option}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
 

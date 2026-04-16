@@ -18,7 +18,6 @@ const statusColor = {
 
 export default function FriendDetails({ friend }) {
   const { timelineData, setTimelineData } = useContext(TimelineContext);
-  console.log(timelineData);
 
   const handleCheckIn = (type) => {
     const timeline = {
