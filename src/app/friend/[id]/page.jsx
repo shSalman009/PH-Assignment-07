@@ -8,5 +8,13 @@ export default async function FriendDetailsPage({ params }) {
 
   const friend = data.find((f) => f.id == id);
 
-  return <FriendDetails friend={friend} />;
+  if (friend) {
+    return <FriendDetails friend={friend} />;
+  } else {
+    return (
+      <p className="text-center text-gray-500 text-xl font-medium py-12">
+        Data Not Found
+      </p>
+    );
+  }
 }

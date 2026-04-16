@@ -1,6 +1,7 @@
 import Friends from "@/components/home/Friends";
 import Banner from "@/components/home/Banner";
-import React from "react";
+import React, { Suspense } from "react";
+import LoadingState from "@/components/LoadingState";
 
 export default function HomePage() {
   return (
@@ -9,7 +10,9 @@ export default function HomePage() {
 
       <div className="border-t border-gray-200 my-12"></div>
 
-      <Friends />
+      <Suspense fallback={<LoadingState />}>
+        <Friends />
+      </Suspense>
     </div>
   );
 }
