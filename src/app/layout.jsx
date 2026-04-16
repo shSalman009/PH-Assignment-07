@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col bg-slate-50">
         <Navbar />
         <Providers>
-          {children}
+          <main className="min-h-[60vh]">{children}</main>
           <ToastContainer />
         </Providers>
         <Footer />

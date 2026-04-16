@@ -40,7 +40,10 @@ export default function Navbar() {
       ></label>
       <div className="collapse-title navbar">
         <div className="navbar-start">
-          <label htmlFor="navbar-1-toggle" className="btn btn-ghost lg:hidden">
+          <label
+            htmlFor="navbar-1-toggle"
+            className="btn btn-ghost mr-2 lg:hidden"
+          >
             <HiMenuAlt1 className="h-5 w-5" />
           </label>
           <Link href="/" className="text-2xl">
