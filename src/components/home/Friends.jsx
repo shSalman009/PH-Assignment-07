@@ -13,7 +13,7 @@ export default async function Friends() {
   const friends = await res.json();
 
   return (
-    <div className="mb-16">
+    <div>
       <h4 className="text-2xl font-semibold mb-2">Your Friends</h4>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-4">
         {friends.map((friend) => (
