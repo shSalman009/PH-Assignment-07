@@ -21,11 +21,7 @@ export default function FriendDetails({ friend }) {
 
   const handleCheckIn = (type) => {
     const timeline = {
-      date: new Date().toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      }),
+      date: new Date().toLocaleDateString("en-CA"),
       name: friend.name,
       type: type,
     };

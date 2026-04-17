@@ -8,13 +8,14 @@ export default function TimelineProvider({ children }) {
   const [timelineData, setTimelineData] = useState([]);
   const [filter, setFilter] = useState("all");
 
-  const filteredTimeline =
+  const filteredTimelineData =
     filter === "all"
       ? timelineData
       : timelineData.filter((d) => d.type === filter);
 
   const data = {
-    timelineData: filteredTimeline,
+    timelineData,
+    filteredTimelineData,
     setTimelineData,
     filter,
     setFilter,
