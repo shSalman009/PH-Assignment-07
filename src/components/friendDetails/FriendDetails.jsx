@@ -1,6 +1,7 @@
 "use client";
 
 import { TimelineContext } from "@/context/TimelineContext";
+import { DateFormat } from "@/lib/DateFormat";
 import Image from "next/image";
 import React, { useContext } from "react";
 import { BiPhoneCall } from "react-icons/bi";
@@ -109,7 +110,7 @@ export default function FriendDetails({ friend }) {
           </div>
           <div className="bg-base-100 shadow rounded-md sm:p-8 p-4">
             <h4 className="md:text-4xl sm:text-2xl text-xl font-bold text-emerald-900 mb-2">
-              {friend.next_due_date}
+              {DateFormat(friend.next_due_date)}
             </h4>
             <p className="text-gray-500 md:text-xl text-base">Next Due</p>
           </div>

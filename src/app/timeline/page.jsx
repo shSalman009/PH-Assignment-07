@@ -9,6 +9,7 @@ import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoSearchSharp } from "react-icons/io5";
 import { TbArrowsSort } from "react-icons/tb";
+import { DateFormat } from "@/lib/DateFormat";
 
 const icons = {
   call: callIcon,
@@ -134,7 +135,9 @@ export default function TimelinePage() {
                   </span>{" "}
                   <span className="text-gray-500">with {timeline.name}</span>
                 </p>
-                <p className="text-gray-500 font-medium">{timeline.date}</p>
+                <p className="text-gray-500 font-medium">
+                  {DateFormat(timeline.date)}
+                </p>
               </div>
             </div>
           ))}
