@@ -2,7 +2,7 @@
 
 import { TimelineContext } from "@/context/TimelineContext";
 import React, { useContext } from "react";
-import { Legend, Pie, PieChart } from "recharts";
+import { Legend, Pie, PieChart, Tooltip } from "recharts";
 
 export default function StatsPage() {
   const { timelineData } = useContext(TimelineContext);
@@ -63,6 +63,7 @@ export default function StatsPage() {
                 dataKey="value"
                 isAnimationActive={true}
               />
+              <Tooltip />
               <Legend
                 align="center"
                 iconSize={8}
