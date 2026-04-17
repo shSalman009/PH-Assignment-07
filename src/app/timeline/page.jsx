@@ -61,7 +61,7 @@ export default function TimelinePage() {
       <h2 className="md:text-5xl text-4xl font-extrabold leading-tight text-slate-800 mb-8">
         Timeline
       </h2>
-      <div className="flex justify-start mb-6 gap-4">
+      <div className="flex md:flex-nowrap flex-wrap-reverse md:justify-start justify-between mb-6 gap-4">
         {/* Dropdown */}
         <div className="dropdown">
           <div
@@ -99,7 +99,7 @@ export default function TimelinePage() {
         </button>
 
         {/* Searc Bar */}
-        <label className="input input-lg ml-auto">
+        <label className="input input-lg md:ml-auto md:w-auto w-full">
           <IoSearchSharp className="h-[1em] opacity-50" />
           <input
             type="search"
