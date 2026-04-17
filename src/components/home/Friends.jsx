@@ -9,7 +9,7 @@ const statusColor = {
 };
 
 export default async function Friends() {
-  const res = await fetch("http://localhost:3000/friends.json");
+  const res = await fetch("https://keen-keeper-mocha.vercel.app/friends.json");
   const friends = await res.json();
 
   return (
